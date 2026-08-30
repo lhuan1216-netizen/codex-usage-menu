@@ -1,0 +1,5 @@
+.DS_Store
+CodexUsageMenu
+*.log
+settings.json
+codex-usage.json

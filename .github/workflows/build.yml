@@ -1,0 +1,15 @@
+name: build
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  macos-build:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - run: swiftc CodexUsageMenu.swift -o CodexUsageMenu -framework AppKit
